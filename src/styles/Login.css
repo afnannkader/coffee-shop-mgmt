@@ -1,0 +1,22 @@
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  background-color: #343a40;
+  color: #fff; 
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.btn-block {
+  margin-top: 20px;
+}
+
+.login-container p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-container p a:hover {
+  text-decoration: underline;
+}

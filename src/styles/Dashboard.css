@@ -1,0 +1,69 @@
+/* Dashboard.css */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: 3.5rem; /* Adjust based on your header height */
+}
+
+@media (min-width: 768px) {
+  .main-container {
+      flex-direction: row;
+  }
+}
+
+.content-container {
+  flex: 1;
+  min-height: 100vh;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  /* overflow-hidden; */
+}
+
+@media (min-width: 768px) {
+  .content-container {
+      margin-left: 18rem; /* Adjust based on sidebar width */
+  }
+}
+
+.menu-button {
+  background-color: #4B5563; /* bg-gray-700 */
+  width: 2.5rem; /* w-10 */
+  height: 2.5rem; /* h-10 */
+  border-radius: 9999px; /* rounded-full */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* shadow */
+  color: white; /* text-white */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  position: fixed;
+  top: 3.5rem; /* Adjust based on your header height */
+  left: 0;
+  width: 18rem; /* Sidebar width */
+  height: 100%;
+  background-color: #f3f4f6; /* bg-gray-200 */
+  overflow-y: auto;
+}
+
+.mobile-sidebar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
+}
+
+.close-button {
+  background-color: #ef4444; /* bg-red-500 */
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem; /* rounded */
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
